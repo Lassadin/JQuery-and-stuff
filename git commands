@@ -1,0 +1,5 @@
+git init                                                                       Only on the first time you're committing your project to git
+git add .
+git commit -m whateveryourmessageis
+git remote add origin https://github.com/Lassadin/JQuery-and-stuff.git         Only on the first time you're committing your project to git, else use
+git push -u origin master
