@@ -1,34 +1,40 @@
-$(function(){
-    $('#fp').remove();
-});
+//  Exercise 1
+
+    $(function(){
+        $('#fp').remove();
+    });
+
+    $(function(){
+        $('p').attr('id', 'test');
+    });
+
+    $(function(){
+        $('#fdiv').css("background-color", "gray");
+    });
+
+    $(function(){
+        $('#fdiv').css("color", "white");
+    });
+
+//Exercise 2
+
+    $(function() {
+        $('button').click(function() {
+            $('#fdiv').append("<p>Hello user!</p>");
+    });
+    });
+
+//Exercise 3
 
 $(function(){
-    $('p').attr('id', 'test');
-});
-
-$(function(){
-    $('#fdiv').css("background-color", "gray");
-});
-
-$(function(){
-    $('#fdiv').css("color", "white");
-});
-
-$(function() {
-    $('button').click(function() {
-        $('#fdiv').append("<p>Hello user!</p>");
-});
-});
-
-$(function(){
-    $('#fdiv').append("<p id='tp'></p>");
+    $('#fdiv').append("<p id='4p'></p>");
 });
 
 $(function() {
     $('#sdiv').hover(function() {
-        $('#tp').text('About to select a link');
+        $('#4p').text('About to select a link');
     },
     function() {
-        $('#tp').text('');
+        $('#4p').html('&nbsp;')
     })
 });
